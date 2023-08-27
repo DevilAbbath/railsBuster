@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <h1 class="text-white text-opacity-75 fs-4">Movies</h1>
+    <%= link_to "New movie", new_movie_path, class: "btn btn-warning fw-bold btn-sm mb-3" %>
+  </div>
+
+  <div id="movies">
+    <div class="row">
+      <% @movies.each do |movie| %>
+        <%= render movie %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <h1 class="text-light fs-4 my-4">Editing client</h1>
+
+  <div class="d-flex justify-content-center text-start mb-3">
+    <%= render "form", client: @client %>
+  </div>
+
+  <div class="text-white mt-4">
+    <%= link_to "Show this client", @client, class:"text-decoration-none link-light opacity-75 px-2" %> |
+    <%= link_to "Back to clients", clients_path, class:"text-decoration-none link-light opacity-75 px-2" %>
+  </div>
+</div>

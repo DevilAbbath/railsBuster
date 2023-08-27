@@ -1,0 +1,16 @@
+<div class="text-center">
+
+  <h1 class="text-light fs-4 mt-4">Editing movie</h1>
+
+  <div class=" d-flex flex-column justify-content-center mt-4">
+
+    <div class="d-flex justify-content-center text-start mb-3">
+      <%= render "form", movie: @movie %>
+    </div>
+
+    <div>
+      <%= link_to "Show this movie", @movie, class:"text-decoration-none link-light opacity-75 px-2" %> |
+      <%= link_to "Back to movies", movies_path, class:"text-decoration-none link-light opacity-75 px-2" %>
+    </div>
+  </div>
+</div>

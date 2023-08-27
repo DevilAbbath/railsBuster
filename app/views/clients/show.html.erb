@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h2 class="text-light fs-4">Show Client</h2>
+
+<table class="table table-bordered text-center mt-3">
+  <thead>
+    <tr class="text-white">
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Movie</th>
+      <th scope="col" colspan="3">Options</th>
+    </tr>
+  </thead>
+  <tbody class="text-white">
+    <%= render @client %>
+  <tbody/>
+</table>
+
+<div>
+  <%= button_to "Destroy this client", @client, class: "btn btn-danger btn-sm", method: :delete %>
+</div>
